@@ -1,7 +1,7 @@
 # Add  code here!
-def prime?(num)
-  num.each do |i|
-    if num % 2 == 0 && num > 2
+def prime?(nums)
+  nums.each do |number|
+    if number % 2 == 0 && number > 2
       return true
     else
       return false
