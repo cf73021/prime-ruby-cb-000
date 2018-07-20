@@ -4,9 +4,9 @@ def prime?(number)
     return false
   elsif n <= 3
     return true
-  for i in 2..number-1
-    if number % i == 0
-      return false
+  else
+    (2..number-1).to_a.all? do |i|
+      num % i != 0
     end
   end
 end
